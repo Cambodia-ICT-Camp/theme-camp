@@ -1,0 +1,40 @@
+/*
+	Theme Name:   Cambodia ICT Camp
+	Theme URI:    
+	Description:  Event Star Child Theme
+	Author:       Open Development Cambodia
+	Author URI:   
+	Template:     event-star
+	Version:      1.0.0
+	License:      
+	License URI:  
+	Tags:         responsive-layout
+	Text Domain:  cambodia-ict-camp
+ */
+
+/* Navbar */
+.at-navbar .featured-button {
+	font-size: 14px;
+	margin-top: 4px;
+	padding: 11px 12px;
+}
+
+.navbar {
+	/*background: #0c2f33;*/
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.navbar ul li a {
+	/*color: #fff;*/
+	font-size: 14px;
+	text-transform: uppercase;
+}
+/* END Navbar */
+
+
+/* Page Header */
+.entry-header h1 {
+	text-transform: uppercase;
+}
+/* END Page Header */
