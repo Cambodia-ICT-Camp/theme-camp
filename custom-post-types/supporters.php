@@ -1,7 +1,8 @@
 <?php
 add_action( 'init', 'create_supporters_custom_post_type' );
 
-function create_supporters_custom_post_type() {
+function create_supporters_custom_post_type() 
+{
     $labels = [
         'name'                => _x( 'Supporters', 'Post Type General Name', 'cambodiaictcamp' ),
         'singular_name'       => _x( 'Supporter', 'Post Type Singular Name', 'cambodiaictcamp' ),
