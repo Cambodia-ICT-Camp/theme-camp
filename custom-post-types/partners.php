@@ -1,7 +1,8 @@
 <?php
 add_action( 'init', 'create_partners_custom_post_type' );
 
-function create_partners_custom_post_type() {
+function create_partners_custom_post_type() 
+{
     $labels = [
         'name'                => _x( 'Parnters', 'Post Type General Name', 'cambodiaictcamp' ),
         'singular_name'       => _x( 'Partner', 'Post Type Singular Name', 'cambodiaictcamp' ),

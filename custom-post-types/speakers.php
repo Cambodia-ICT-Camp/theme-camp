@@ -1,7 +1,8 @@
 <?php
 add_action( 'init', 'create_speakers_custom_post_type' );
 
-function create_speakers_custom_post_type() {
+function create_speakers_custom_post_type() 
+{
     $labels = [
         'name'                => _x( 'Speakers', 'Post Type General Name', 'cambodiaictcamp' ),
         'singular_name'       => _x( 'Speaker', 'Post Type Singular Name', 'cambodiaictcamp' ),

@@ -1,7 +1,8 @@
 <?php
 add_action( 'init', 'create_sessions_custom_post_type' );
 
-function create_sessions_custom_post_type() {
+function create_sessions_custom_post_type() 
+{
     $labels = [
         'name'                => _x( 'Sessions', 'Post Type General Name', 'cambodiaictcamp' ),
         'singular_name'       => _x( 'Session', 'Post Type Singular Name', 'cambodiaictcamp' ),

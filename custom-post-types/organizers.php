@@ -1,7 +1,8 @@
 <?php
 add_action( 'init', 'create_organizers_custom_post_type' );
 
-function create_organizers_custom_post_type() {
+function create_organizers_custom_post_type() 
+{
     $labels = [
         'name'                => _x( 'Organizers', 'Post Type General Name', 'cambodiaictcamp' ),
         'singular_name'       => _x( 'Organizer', 'Post Type Singular Name', 'cambodiaictcamp' ),
