@@ -29,7 +29,11 @@ require_once( __DIR__ . '/custom-post-types/sessions.php' );
 require_once( __DIR__ . '/custom-post-types/speakers.php' );
 require_once( __DIR__ . '/custom-post-types/supporters.php' );
 
-// Register Custom Metaboxes for Speaker post type
+// Register Custom Meta Boxes for Speaker post type
 require_once( __DIR__ . '/custom-meta-boxes/speakers/social-media-links.php' );
 require_once( __DIR__ . '/custom-meta-boxes/speakers/expertise.php' );
+
+// Register Custom Meta Boxes for Session post type
+require_once( __DIR__ . '/custom-meta-boxes/sessions/hall.php' );
+require_once( __DIR__ . '/custom-meta-boxes/sessions/time.php' );
 

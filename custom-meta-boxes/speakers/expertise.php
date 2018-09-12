@@ -13,8 +13,7 @@ function add_speakers_expertise_callback( $post )
 
 	$value = get_post_meta( $post->ID, '_speakers_expertise_value_key', true );
 
-	echo '<lable for="speakers_expertise_field">Expertise: </lable>';
-	echo '<input type="text" id="speakers_expertise_field" name="speakers_expertise_field" value="'. esc_attr( $value ) .'" size="25" />';
+	echo '<input type="text" id="speakers_expertise_field" name="speakers_expertise_field" value="'. esc_attr( $value ) .'" size="35" />';
 }
 
 function save_speakers_expertise_data( $post_id )
