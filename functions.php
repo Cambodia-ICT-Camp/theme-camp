@@ -17,3 +17,15 @@ function wmpudev_enqueue_icon_stylesheet()
 }
 
 add_action( 'wp_enqueue_scripts', 'wmpudev_enqueue_icon_stylesheet' );
+
+// Register Custom Taxonomies
+require_once( __DIR__ . '/custom-taxonomies/years.php' );
+require_once( __DIR__ . '/custom-taxonomies/session-types.php' );
+
+// Register Custom Post Types
+require_once( __DIR__ . '/custom-post-types/organizers.php' );
+require_once( __DIR__ . '/custom-post-types/partners.php' );
+require_once( __DIR__ . '/custom-post-types/sessions.php' );
+require_once( __DIR__ . '/custom-post-types/speakers.php' );
+require_once( __DIR__ . '/custom-post-types/supporters.php' );
+
