@@ -19,21 +19,21 @@ function wmpudev_enqueue_icon_stylesheet()
 add_action( 'wp_enqueue_scripts', 'wmpudev_enqueue_icon_stylesheet' );
 
 // Register Custom Taxonomies
-require_once( __DIR__ . '/custom-taxonomies/years.php' );
-require_once( __DIR__ . '/custom-taxonomies/session-types.php' );
+require_once( __DIR__ . '/inc/custom-taxonomies/years.php' );
+require_once( __DIR__ . '/inc/custom-taxonomies/session-types.php' );
 
 // Register Custom Post Types
-require_once( __DIR__ . '/custom-post-types/organizers.php' );
-require_once( __DIR__ . '/custom-post-types/partners.php' );
-require_once( __DIR__ . '/custom-post-types/sessions.php' );
-require_once( __DIR__ . '/custom-post-types/speakers.php' );
-require_once( __DIR__ . '/custom-post-types/supporters.php' );
+require_once( __DIR__ . '/inc/custom-post-types/organizers.php' );
+require_once( __DIR__ . '/inc/custom-post-types/partners.php' );
+require_once( __DIR__ . '/inc/custom-post-types/sessions.php' );
+require_once( __DIR__ . '/inc/custom-post-types/speakers.php' );
+require_once( __DIR__ . '/inc/custom-post-types/supporters.php' );
 
 // Register Custom Meta Boxes for Speaker post type
-require_once( __DIR__ . '/custom-meta-boxes/speakers/social-media-links.php' );
-require_once( __DIR__ . '/custom-meta-boxes/speakers/expertise.php' );
+require_once( __DIR__ . '/inc/custom-meta-boxes/speakers/social-media-links.php' );
+require_once( __DIR__ . '/inc/custom-meta-boxes/speakers/expertise.php' );
 
 // Register Custom Meta Boxes for Session post type
-require_once( __DIR__ . '/custom-meta-boxes/sessions/hall.php' );
-require_once( __DIR__ . '/custom-meta-boxes/sessions/time.php' );
+require_once( __DIR__ . '/inc/custom-meta-boxes/sessions/hall.php' );
+require_once( __DIR__ . '/inc/custom-meta-boxes/sessions/time.php' );
 
