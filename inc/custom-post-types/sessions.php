@@ -37,7 +37,7 @@ function create_sessions_custom_post_type()
         'has_archive'         => true,
         'exclude_from_search' => false,
         'publicly_queryable'  => true,
-        'capability_type'     => 'page',
+        'capability_type'     => 'post',
     ];
 
     register_post_type( 'sessions', $args );
