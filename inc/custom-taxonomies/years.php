@@ -1,7 +1,7 @@
 <?php
-add_action( 'init', 'create_years_hierarchical_taxonomy', 0 );
+add_action( 'init', 'create_camp_years_hierarchical_taxonomy', 0 );
 
-function create_years_hierarchical_taxonomy()
+function create_camp_years_hierarchical_taxonomy()
 {
 	$labels = [
 		'name'              => _x( 'Years', 'taxonomy general name' ),
@@ -17,12 +17,12 @@ function create_years_hierarchical_taxonomy()
 		'menu_name'         => __( 'Years' ),
 	];
 
-	register_taxonomy( 'year', ['page', 'post', 'sessions'], [
+	register_taxonomy( 'camp_year', ['page', 'post', 'sessions'], [
 	    'hierarchical'      => true,
 	    'labels'            => $labels,
 	    'show_ui'           => true,
 	    'show_admin_column' => true,
 	    'query_var'         => true,
-	    'rewrite'           => [ 'slug' => 'year' ]
+	    'rewrite'           => [ 'slug' => 'camp_year' ]
 	]);
 }
