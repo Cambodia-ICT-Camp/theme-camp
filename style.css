@@ -12,6 +12,12 @@
 	Text Domain:  cambodia-ict-camp
  */
 
+/* General */
+.text-center {
+	text-align: center;
+}
+/* END General */
+
 /* Navbar */
 .at-navbar .featured-button {
 	font-size: 14px;
@@ -20,21 +26,31 @@
 }
 
 .navbar {
-	/*background: #0c2f33;*/
 	margin-bottom: 0;
 	padding: 0;
 }
 
 .navbar ul li a {
-	/*color: #fff;*/
 	font-size: 14px;
-	text-transform: uppercase;
 }
 /* END Navbar */
 
 
 /* Page Header */
 .entry-header h1 {
-	text-transform: uppercase;
+	margin: 0;
 }
 /* END Page Header */
+
+/* Theme Page */
+.theme-box {
+	border: 1px solid;
+	border-radius: 10px;
+	padding: 30px 20px;
+}
+
+.theme-box:hover {
+	color: #fff;
+	background-color: #06323d; 
+}
+/* END Theme Page */
