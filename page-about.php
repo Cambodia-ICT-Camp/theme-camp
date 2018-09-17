@@ -61,7 +61,7 @@ if(
 							<div class="col-xs-12 col-sm-12 col-md-3">
 								<?php
 								$attributes = [
-									'title' => get_the_title(),
+									'title' => __( get_the_title() ),
 									'class' => 'img-responsive',
 								];
 
@@ -114,7 +114,7 @@ if(
 							<div class="col-xs-12 col-sm-12 col-md-3">
 								<?php
 								$attributes = [
-									'title' => get_the_title(),
+									'title' => __( get_the_title() ),
 									'class' => 'img-responsive',
 								];
 
@@ -167,7 +167,7 @@ if(
 							<div class="col-xs-12 col-sm-12 col-md-3">
 								<?php
 								$attributes = [
-									'title' => get_the_title(),
+									'title' => __( get_the_title() ),
 									'class' => 'img-responsive',
 								];
 

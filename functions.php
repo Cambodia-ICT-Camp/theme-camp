@@ -23,6 +23,7 @@ require_once( __DIR__ . '/inc/custom-taxonomies/years.php' );
 require_once( __DIR__ . '/inc/custom-taxonomies/session-types.php' );
 
 // Register Custom Post Types
+require_once( __DIR__ . '/inc/custom-post-types/announcements.php' );
 require_once( __DIR__ . '/inc/custom-post-types/organizers.php' );
 require_once( __DIR__ . '/inc/custom-post-types/partners.php' );
 require_once( __DIR__ . '/inc/custom-post-types/sessions.php' );
