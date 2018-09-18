@@ -9,14 +9,13 @@ function camp_theme_enqueue_styles()
     wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', ['parent-style'] );
 }
 
-// Get icon from Font Awesome
-function wmpudev_enqueue_icon_stylesheet()
-{
-	wp_register_style( 'fontawesome', 'http:////maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' );
-	wp_enqueue_style( 'fontawesome');
-}
+// Add Google Font
+add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
 
-add_action( 'wp_enqueue_scripts', 'wmpudev_enqueue_icon_stylesheet' );
+function add_google_fonts()
+{
+	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Battambang', false );
+}
 
 // Register Custom Taxonomies
 require_once( __DIR__ . '/inc/custom-taxonomies/years.php' );
