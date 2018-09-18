@@ -13,6 +13,7 @@
  */
 
 /* General */
+body,
 h1, 
 h1 a, 
 h2, 
@@ -35,6 +36,10 @@ span {
 	font-family: Battambang;
 }
 
+.img-responsive {
+	margin: auto;
+}
+
 .text-center {
 	text-align: center;
 }
@@ -53,7 +58,19 @@ span {
 }
 
 .navbar ul li a {
-	font-size: 14px;
+	font-size: 15px;
+}
+
+.navbar .navbar-toggle {
+	margin-top: 1em;
+}
+
+.main-navigation #primary-menu {
+	margin-top: 1.5em; 
+}
+
+.search-woo .featured-button {
+	margin-top: 2em;
 }
 /* END Navbar */
 
