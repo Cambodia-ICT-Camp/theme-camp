@@ -39,3 +39,6 @@ require_once( __DIR__ . '/inc/custom-meta-boxes/sessions/time.php' );
 
 // Widget
 require_once( __DIR__ . '/widgets/camp-posts-no-img.php' );
+
+// Template tags
+require_once( __DIR__ . '/inc/template-tags.php' );
