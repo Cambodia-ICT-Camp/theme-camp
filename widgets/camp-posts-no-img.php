@@ -3,7 +3,7 @@
  * Custom columns of category with various options
  *
  * @package Acme Themes
- * @subpackage Event Star
+ * @subpackage Cambodia ICT Camp
  * @since 1.0.0
  */
 if ( ! class_exists( 'Event_Star_Posts_Col' ) ) {
@@ -67,7 +67,7 @@ if ( ! class_exists( 'Event_Star_Posts_Col' ) ) {
             <p>
                 <label for="<?php echo $this->get_field_id( 'unique_id' ); ?>"><?php esc_html_e( 'Section ID', 'event-star' ); ?>:</label>
                 <input class="widefat" id="<?php echo $this->get_field_id( 'unique_id' ); ?>" name="<?php echo $this->get_field_name( 'unique_id' ); ?>" type="text" value="<?php echo $unique_id; ?>" />
-                <br />
+                <br/>
                 <small><?php esc_html_e('Enter a Unique Section ID. You can use this ID in Menu item for enabling One Page Menu.','event-star')?></small>
             </p>
             <p>
@@ -437,7 +437,7 @@ if ( ! class_exists( 'Event_Star_Posts_Col' ) ) {
                                                 <header class="entry-header <?php echo $no_blog_image; ?>">
                                                     <div class="entry-meta">
                                                         <?php
-                                                        event_star_cats_lists() 
+                                                        // event_star_cats_lists() 
                                                         ?>
                                                     </div><!-- .entry-meta -->
                                                 </header><!-- .entry-header -->

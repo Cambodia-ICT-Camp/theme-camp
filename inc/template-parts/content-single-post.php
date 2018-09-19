@@ -2,6 +2,7 @@
 global $event_star_customizer_all_values;
 
 $content_from = $event_star_customizer_all_values['event-star-blog-archive-content-from'];
+
 $no_blog_image = '';
 ?>
 
@@ -9,10 +10,11 @@ $no_blog_image = '';
 	<div class="content-wrapper">
         <?php
         $thumbnail = $event_star_customizer_all_values['event-star-blog-archive-img-size'];
-        if( has_post_thumbnail() && 'disable' != $thumbnail):
+
+        if( has_post_thumbnail() && 'disable' != $thumbnail ):
 	        ?>
             <!--post thumbnal options-->
-            <div class="image-wrap">
+            <div class="image-wrap col-md-5" style="float:right">
                 <div class="post-thumb">
                     <a href="<?php the_permalink(); ?>">
 				        <?php the_post_thumbnail( $thumbnail ); ?>
@@ -24,13 +26,14 @@ $no_blog_image = '';
 	        $no_blog_image = 'no-image';
         endif;
         ?>
-        <div class="entry-content <?php echo $no_blog_image?>">
+
+        <div class="entry-content <?php echo $no_blog_image; ?>">
 			<?php
 			if ( 'post' === get_post_type() ) : ?>
                 <header class="entry-header <?php echo $no_blog_image; ?>">
                     <div class="entry-meta">
 						<?php
-						event_star_cats_lists()
+						// event_star_cats_lists()
 						?>
                     </div><!-- .entry-meta -->
                 </header><!-- .entry-header -->
@@ -40,7 +43,7 @@ $no_blog_image = '';
 				<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 			</div>
             <footer class="entry-footer">
-				<?php event_star_entry_footer(); ?>
+				<?php cambodia_ict_camp_entry_footer(); ?>
             </footer><!-- .entry-footer -->
 			<?php
             if ( 'content' == $content_from ) :
@@ -54,9 +57,10 @@ $no_blog_image = '';
 		            'after'  => '</div>',
 	            ) );
             else :
-                the_excerpt();
+                the_content();
             endif;
 			?>
 		</div><!-- .entry-content -->
+		<div class="clearfix"></div>
 	</div>
 </article><!-- #post-## -->
